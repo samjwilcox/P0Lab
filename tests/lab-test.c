@@ -22,8 +22,19 @@ void test_get_greeting(void) {
   free(greeting);
 }
 
+/**
+ * @brief Tests that the product function correctly multiplies two integers.
+ *
+ * Verifies that multiplying 2 by 3 returns the expected result of 6.
+ */
 void test_product(void) { TEST_ASSERT_EQUAL_INT(6, product(2, 3)); }
 
+/**
+ * @brief Tests the expected behavior of the intentionally incorrect sum function.
+ *
+ * Verifies that adding 2 and 3 using incorrect_sum returns the intentionally
+ * incorrect result of 6.
+ */
 void test_incorrect_sum(void) { TEST_ASSERT_EQUAL_INT(6, incorrect_sum(2, 3)); }
 
 int main(void) {

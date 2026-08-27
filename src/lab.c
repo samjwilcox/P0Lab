@@ -29,8 +29,27 @@ char *get_greeting(const char *restrict name) {
   return greeting;
 }
 
+/**
+ * @brief Calculates the product of two integers.
+ *
+ * Multiplies the two provided integers and returns the result.
+ *
+ * @param a The first integer.
+ * @param b The second integer.
+ * @return The product of a and b.
+ */
 // cppcheck-suppress unusedFunction
 int product(int a, int b) { return a * b; }
 
+/**
+ * @brief Calculates an intentionally incorrect sum of two integers.
+ *
+ * Adds the two provided integers and intentionally increases the result by one.
+ * This function is used to demonstrate a failing unit test.
+ *
+ * @param a The first integer.
+ * @param b The second integer.
+ * @return An intentionally incorrect sum of a and b.
+ */
 // cppcheck-suppress unusedFunction
 int incorrect_sum(int a, int b) { return a + b + 1; }
