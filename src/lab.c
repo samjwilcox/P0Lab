@@ -2,10 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char *get_greeting(const char *restrict name)
-{
-  if (name == NULL)
-  {
+char *get_greeting(const char *restrict name) {
+  if (name == NULL) {
     return NULL;
   }
 
@@ -16,19 +14,23 @@ char *get_greeting(const char *restrict name)
     return NULL; // snprintf failed
   } // GCOVR_EXCL_STOP
 
-  //Casting is safe here because we know length is non-negative
-  size_t alloc_size = (size_t) length + 1; // +1 for the null terminator
-  char *greeting = malloc( alloc_size);
-
+  // Casting is safe here because we know length is non-negative
+  size_t alloc_size = (size_t)length + 1; // +1 for the null terminator
+  char *greeting = malloc(alloc_size);
 
   if (greeting == NULL) // GCOVR_EXCL_START
   {
     return NULL; // Memory allocation failed
-  }  // GCOVR_EXCL_STOP
-
+  } // GCOVR_EXCL_STOP
 
   // Create the greeting message
   snprintf(greeting, alloc_size, "Hello, %s!", name);
 
   return greeting;
 }
+
+// cppcheck-suppress unusedFunction
+int product(int a, int b) { return a * b; }
+
+// cppcheck-suppress unusedFunction
+int incorrect_sum(int a, int b) { return a + b + 1; }

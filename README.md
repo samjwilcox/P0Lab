@@ -1,22 +1,15 @@
-# Project X
+# Project 0
 
-- Name: John Doe
-- Email: johndoe@u.boisestate.edu
-- Class: CS123-001
+- Name: Sam Wilcox
+- Email: samwilcox@u.boisestate.edu
+- Class: CS425-001
 
 ## Known Bugs or Issues
 
-TODO: Are there any known issues?
+There are no known bugs or issues with the project at this time.
 
 ## Experience
 
-TODO: Describe your experience with the project (struggles, breakthroughs, etc.).
+I already had experience with C development and unit testing prior to this project, so the coding and testing portions were fairly straightforward. The biggest challenge was getting the required development and analysis tools working correctly on Windows. I set up MSYS2 and worked through several environment-specific issues involving Make, GCC, gcovr, clang-tidy, cppcheck, and clang-format.
 
-## Analysis
-
-TODO: Provide your analysis of the results. If the assignment does not require
-analysis, you can remove this section.
-
-Here is an example of how to include a plot in your README:
-
-![Example Image](scripts/example_plot.png)
+The most useful part of the project was becoming familiar with the specific build, testing, code coverage, and static analysis workflow that will be used throughout this course. Once the development environment was configured correctly, the rest of the project went smoothly.
